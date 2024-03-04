@@ -1,11 +1,5 @@
 /* ------------------------------------------------------------------------------
 
-  Template Name: Denzel. 
-  Description: Denzel. - Onepage Personal Template
-  Author: Paul
-  Author URI: http://themeforest.net/user/paul_tf
-  
-  1.  Global
 
       1.1 General
       1.2 Typography
@@ -661,7 +655,7 @@ ion-icon{
 }
 
 .social-icons ion-icon:hover{
-  color: #D4F21B;
+  color: peru;
 }
 
 .navbar-bottom-white,
@@ -1367,8 +1361,8 @@ h1 + .line{
   position: absolute;
   left: 0;
   top:0;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   padding:2.14rem 1.928rem;
 }
 
