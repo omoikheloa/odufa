@@ -252,7 +252,7 @@ textarea.form-control{
 }
 
 .form-control:focus{
-  border-color:#D4F21B;
+  border-color:#8bc917e0;
   outline: 0;
   -webkit-box-shadow:none;
           box-shadow:none;
@@ -273,7 +273,7 @@ textarea.form-control{
 }
 
 label.error{
-  border-color:#D4F21B;
+  border-color:#8bc917e0;
   padding:9px 0 0 22px;
   font-size:0.9rem;
 }
@@ -282,6 +282,15 @@ label.error{
   padding:9px 0 0 22px;
   font-size:0.9rem;
   color: #fff;
+}
+
+.green-text {
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
 }
 
 
@@ -781,7 +790,7 @@ ion-icon{
   width: 100%;
   height: 100%;
   z-index: 110;
-  background-color: #1b001d;
+  background-color: #8bc917e0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   display: -ms-flexbox;
