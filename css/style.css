@@ -52,7 +52,7 @@ html{
 
 body{
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.625em;
   color:#767676;
   overflow-y: hidden;
@@ -65,21 +65,21 @@ body{
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #D4F21B;
+  background: #f374ffe0;
 }
 
 ::selection{
-  background-color:#D4F21B;
+  background-color: #f374ffe0;
   color:#000;
 }
 
 -webkit-::selection{
-    background-color:#D4F21B;
+    background-color: #f374ffe0;
     color:#000;
 }
 
 ::-moz-selection{
-    background-color:#D4F21B;
+    background-color: #f374ffe0;
     color:#000;
 }
 
@@ -194,7 +194,7 @@ ul{
 }
 
 a {
-  color:#D4F21B;
+  color: #f374ffe0;
   -webkit-transition: color .3s ease-out;
        -o-transition: color .3s ease-out;
           transition: color .3s ease-out;
@@ -202,7 +202,7 @@ a {
 
 a:hover,
 a:focus {
-  color:#D4F21B;
+  color: #f374ffe0;
   outline: none;
 }
 
@@ -303,7 +303,7 @@ label.error{
   font-family: 'Karla', sans-serif;
   position: relative;
   display: inline-block;
-  border:0.2em solid #D4F21B;
+  border:0.2em solid #f374ffe0;
   border-radius: 0;
   padding:1em 2.4em 1em;
   font-size: 0.875em;
@@ -313,7 +313,7 @@ label.error{
   letter-spacing: 0.15em;
   text-transform: uppercase;
   text-decoration: none;
-  background-color:#D4F21B;
+  background-color: #f374ffe0;
   font-weight: 700;
   border-width: 1px;
   -webkit-transition: all .3s ease-out!important;
@@ -324,8 +324,8 @@ label.error{
 .btn:focus,
 .btn:active{
   color: #000;
-  background-color: ;
-  border-color:#D4F21B;
+  background-color: #c131cee0;
+  border-color: #f374ffe0;
   -webkit-box-shadow:none;
   box-shadow: none;
   outline: none!important;
@@ -396,8 +396,8 @@ ion-icon{
 }
 
 .icon-play:hover{
-  border:1px solid #D4F21B;
-  background-color:#D4F21B; 
+  border:1px solid #f374ffe0;
+  background-color:#f374ffe0; 
   color: #343434;
 }
 
@@ -438,7 +438,7 @@ ion-icon{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #D4F21B;
+  background-color: #f374ffe0;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -522,7 +522,7 @@ ion-icon{
 }
 
 .text-primary{
-  color:#D4F21B!important;
+  color: #f374ffe0!important;
 }
 
 
@@ -664,7 +664,7 @@ ion-icon{
 }
 
 .social-icons ion-icon:hover{
-  color: peru;
+  color: #f374ffe0;
 }
 
 .navbar-bottom-white,
@@ -823,7 +823,7 @@ ion-icon{
 
 .navbar-mobile .language .active a,
 .navbar-mobile .language li a:hover{
-  color: #D4F21B;
+  color: #f374ffe0;
   text-decoration: none;
 }
 
@@ -840,7 +840,7 @@ ion-icon{
 
 .navbar-mobile .close:hover{
   opacity: 1;
-  color:#D4F21B;
+  color: #f374ffe0;
 }
 
 @media (min-width: 576px){
@@ -873,7 +873,7 @@ ion-icon{
 .navbar-nav-mobile li .active,
 .navbar-nav-mobile  li a:hover,
 .navbar-nav-mobile  li a:focus{
-  color:#D4F21B;
+  color: #ffffffe0;
 }
 
 .menu-is-open{
@@ -980,7 +980,7 @@ ion-icon{
 h1 + .line{
   margin-top:15vh;
   width: 25%;
-  border-top:3px  solid #D4F21B;
+  border-top:3px  solid #f374ffe0;
   transition:all .3s ease;
 }
 
@@ -1080,7 +1080,7 @@ h1 + .line{
   height: 0;
   content: '';
   transition:all .3s ease;
-  background-color: #D4F21B;
+  background-color: #f374ffe0;
 }
 
 .progress-nav li:before{
@@ -1114,7 +1114,7 @@ h1 + .line{
   font-size: 10rem;
   line-height: 1;
   font-family: 'Karla', sans-serif;
-  color:#D4F21B;
+  color: #f374ffe0;
 }
 
 .experience-text{
@@ -1124,6 +1124,26 @@ h1 + .line{
   font-weight: 700;
 }
 
+/* 3.3.1 Carousel */
+
+img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
 
 
 /* 3.4 Experience */
@@ -1270,7 +1290,7 @@ h1 + .line{
 
 .progress-bar:before{
   position: absolute;
-  background:#D4F21B;
+  background: #f374ffe0;
   content:'';
   width:0;
   height: 100%;
@@ -1386,7 +1406,7 @@ h1 + .line{
 }
 
 .project-box:hover{
-  background: #D4F21B;
+  background: #f374ffe0;
   text-decoration: none;
   border-color: transparent;
 }
