@@ -64,8 +64,6 @@
     <nav  class="navbar navbar-mobile">
       <ion-icon class="close" name="close-outline"></ion-icon>
 
-     
-
       <ul class="navbar-nav navbar-nav-mobile">
         <li><a class="nav-link" data-menuanchor="home" href="#home">Home</a></li>
         <li><a class="nav-link" data-menuanchor="about" href="#about">About</a></li>
@@ -197,8 +195,8 @@
                                 <div class="form-group">
                                     <textarea rows="3" name="message"  class="form-control" placeholder="Message"></textarea>
                                 </div>
-                                <div class="message" id="success-message">Someone from the team will contact you shortly</div>
-                                <div class="message" id="error-message">Sorry, I didn't quite catch that</div>
+                                <div class="message" id="success-message" style="display:none;">Someone from the team will contact you shortly</div>
+                                <div class="message" id="error-message" style="display:none;">Sorry, I didn't quite catch that</div>
                                 <div class="form-group mb-0">
                                     <button type="submit" class="btn">Contact me</button>
                                 </div>
@@ -244,7 +242,7 @@
           var $form = $(form);
           $.ajax({
             type: 'POST',
-            url: 'https://script.google.com/macros/s/AKfycbwTBd1tfAj5cfSqvrVrZFxeu8GtLf_4eDaJZ2TOSXNhSQveDQQcaP-aVcug-zZkS9J77g/exec'
+            url: 'https://script.google.com/macros/s/AKfycbwTBd1tfAj5cfSqvrVrZFxeu8GtLf_4eDaJZ2TOSXNhSQveDQQcaP-aVcug-zZkS9J77g/exec', // Added comma here
             data: $form.serialize(),
             success: function(response) {
               $('#success-message').show();
