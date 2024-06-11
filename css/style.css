@@ -1356,6 +1356,21 @@ img {
     background-color: rgba(0,0,0,0.4);
 }
 
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
 .popup-modal .icon-links {
     display: flex;
     justify-content: center;
