@@ -1,63 +1,47 @@
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
+const imgs = document.getElementById('imgs');
+const img = document.querySelectorAll('#imgs img');
 
-const img = document.querySelectorAll('#imgs img')
-
-let idx = 0
-
-let interval = setInterval(run, 2000)
+let idx = 0;
+let interval = setInterval(run, 2000);
 
 function run() {
-    idx++
-    changeImage()
+    idx++;
+    changeImage();
 }
 
 function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
-    } else if(idx < 0) {
-        idx = img.length - 1
+    if (idx > img.length - 1) {
+        idx = 0;
+    } else if (idx < 0) {
+        idx = img.length - 1;
     }
 
-    imgs.style.transform = `translateX(${-idx * 300}px)`
+    imgs.style.transform = `translateX(${-idx * 300}px)`;
 }
 
 function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 9000)
+    clearInterval(interval);
+    interval = setInterval(run, 9000);
 }
 
-rightBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-    resetInterval()
-})
-
-leftBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-    resetInterval()
-})
-
 document.addEventListener('DOMContentLoaded', function() {
-        var albumArts = document.querySelectorAll('.album-art');
-        var popup = document.getElementById('albumPopup');
-        var close = document.querySelector('.popup-modal .close');
+    var albumArts = document.querySelectorAll('.album-art');
+    var popup = document.getElementById('albumPopup');
+    var close = document.querySelector('.popup-modal .close');
 
-        albumArts.forEach(function(art) {
-            art.addEventListener('click', function() {
-                popup.style.display = 'block';
-            });
-        });
-
-        close.addEventListener('click', function() {
-            popup.style.display = 'none';
-        });
-
-        window.addEventListener('click', function(event) {
-            if (event.target == popup) {
-                popup.style.display = 'none';
-            }
+    albumArts.forEach(function(art) {
+        art.addEventListener('click', function() {
+            popup.style.display = 'block';
         });
     });
+
+    close.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
