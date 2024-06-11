@@ -1343,74 +1343,32 @@ img {
 }
 
 /* Pop-up Menu */
-.album-art {
-    cursor: pointer;
-}
-
 .popup-modal {
     display: none;
     position: fixed;
     z-index: 1000;
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.4);
 }
 
-.popup-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 10px;
-    border: 1px transparent #888;
-    width: 100%;
-    max-width: 400px;
-    position: relative;
-    text-align: center;
-}
-
-.popup-content h6 {
-    margin-top: 0;
-}
-
-.icon-links {
+.popup-modal .icon-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.icon-link {
-    color: #000;
-    font-size: 40px;
-    transition: color 0.3s ease;
+.popup-modal .icon-links a {
+    color: #fff;
+    font-size: 30px;
 }
 
-.icon-link-1:hover {
-    color: #007bff;
-}
-
-.icon-link-2:hover {
-    color: #007bff;
-}
-
-.icon-link-3:hover {
-    color: #007bff;
-}
-
-.icon-link-4:hover {
-    color: #007bff;
-}
-
-.icon-link-5:hover {
-    color: #007bff;
-}
-
-.close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 24px;
-    cursor: pointer;
+.popup-modal .icon-links a:hover {
+    color: #1db954; /* Example for Spotify green */
 }
