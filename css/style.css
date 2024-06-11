@@ -1381,37 +1381,37 @@ img {
     margin-top: 20px;
 }
 
-.icon-link-1 {
+.icon-link-1:hover {
     color: #1DB954;
     font-size: 30px;
     transition: color 0.3s ease;
 }
 
-.icon-link-2 {
+.icon-link-2:hover {
     color: #FA2D48;
     font-size: 30px;
     transition: color 0.3s ease;
 }
 
-.icon-link-3 {
+.icon-link-3:hover {
     color: #ff8800;
     font-size: 30px;
     transition: color 0.3s ease;
 }
 
-.icon-link-4 {
+.icon-link-4:hover {
     color: #FF0000;
     font-size: 30px;
     transition: color 0.3s ease;
 }
 
-.icon-link-5 {
-    color: #FA2D48;
+.icon-link-5:hover {
+    color: #ff0000;
     font-size: 30px;
     transition: color 0.3s ease;
 }
 
-.icon-link:hover {
+.icon-link-1 .icon-link-2 .icon-link-3 .icon-link-4 .icon-link-5 {
     color: #007bff;
 }
 
