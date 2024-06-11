@@ -1370,5 +1370,13 @@ img {
 }
 
 .popup-modal .icon-links a:hover {
-    color: #1db954; /* Example for Spotify green */
+    color: #1db954;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
