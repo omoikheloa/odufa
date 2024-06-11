@@ -39,3 +39,25 @@ leftBtn.addEventListener('click', () => {
     changeImage()
     resetInterval()
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+        var albumArts = document.querySelectorAll('.album-art');
+        var popup = document.getElementById('albumPopup');
+        var close = document.querySelector('.popup-modal .close');
+
+        albumArts.forEach(function(art) {
+            art.addEventListener('click', function() {
+                popup.style.display = 'block';
+            });
+        });
+
+        close.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        });
+    });
