@@ -32,7 +32,7 @@
             scrollingSpeed: 280,
             navigation:false,
             menu: '.navbar-nav',
-            anchors: ['home', 'about', 'works', 'contact'],
+            anchors: ['home', 'about', 'work', 'contact'],
             afterRender: function(anchorLink, index){ 
               NavbarColor();
 
