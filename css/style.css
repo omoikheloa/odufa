@@ -1365,7 +1365,7 @@ img {
     padding: 10px;
     border: 1px transparent #888;
     width: 60%;
-    max-width: 300px;
+    max-width: 400px;
     position: relative;
     text-align: center;
 }
@@ -1387,7 +1387,23 @@ img {
     transition: color 0.3s ease;
 }
 
-.icon-link:hover {
+.icon-link-1:hover {
+    color: #007bff;
+}
+
+.icon-link-2:hover {
+    color: #007bff;
+}
+
+.icon-link-3:hover {
+    color: #007bff;
+}
+
+.icon-link-4:hover {
+    color: #007bff;
+}
+
+.icon-link-5:hover {
     color: #007bff;
 }
 
