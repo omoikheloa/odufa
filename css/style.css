@@ -1364,8 +1364,8 @@ img {
     margin: 15% auto;
     padding: 10px;
     border: 1px transparent #888;
-    width: 40%;
-    max-width: 200px;
+    width: 60%;
+    max-width: 300px;
     position: relative;
     text-align: center;
 }
