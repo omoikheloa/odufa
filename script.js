@@ -44,4 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.display = 'none';
         }
     });
+
+    var backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.play().catch(function(error) {
+        console.log('Playback failed: ' + error);
+    });
+
+    playButton.addEventListener('click', function() {
+        backgroundMusic.play();
+        playButton.style.display = 'none'; // Hide play button after play
+    });
 });
