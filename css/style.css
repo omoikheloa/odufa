@@ -1364,13 +1364,13 @@ img {
     margin: 15% auto;
     padding: 10px;
     border: 1px transparent #888;
-    width: 40%;
+    width: 60%;
     max-width: 200px;
     position: relative;
     text-align: center;
 }
 
-.popup-content h2 {
+.popup-content h6 {
     margin-top: 0;
 }
 
@@ -1381,9 +1381,9 @@ img {
     margin-top: 20px;
 }
 
-.icon-link {
-    color: #000;
-    font-size: 40px;
+.icon-link-1 {
+    color: #1DB954;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
