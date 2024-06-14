@@ -1,33 +1,35 @@
-const imgs = document.getElementById('imgs');
-const img = document.querySelectorAll('#imgs img');
+document.addEventListener('DOMContentLoaded', function() {
+    const imgs = document.getElementById('imgs');
+    const img = document.querySelectorAll('#imgs img');
+    const playButton = document.getElementById('playButton');
+    const pauseButton = document.getElementById('pauseButton');
+    const backgroundMusic = document.getElementById('background-music');
+    let idx = 0;
+    let interval = setInterval(run, 2000);
 
-let idx = 0;
-let interval = setInterval(run, 2000);
-
-function run() {
-    idx++;
-    changeImage();
-}
-
-function changeImage() {
-    if (idx > img.length - 1) {
-        idx = 0;
-    } else if (idx < 0) {
-        idx = img.length - 1;
+    function run() {
+        idx++;
+        changeImage();
     }
 
-    imgs.style.transform = `translateX(${-idx * 300}px)`;
-}
+    function changeImage() {
+        if (idx > img.length - 1) {
+            idx = 0;
+        } else if (idx < 0) {
+            idx = img.length - 1;
+        }
 
-function resetInterval() {
-    clearInterval(interval);
-    interval = setInterval(run, 9000);
-}
+        imgs.style.transform = `translateX(${-idx * 300}px)`;
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var albumArts = document.querySelectorAll('.album-art');
-    var popup = document.getElementById('albumPopup');
-    var close = document.querySelector('.popup-modal .close');
+    function resetInterval() {
+        clearInterval(interval);
+        interval = setInterval(run, 9000);
+    }
+
+    const albumArts = document.querySelectorAll('.album-art');
+    const popup = document.getElementById('albumPopup');
+    const close = document.querySelector('.popup-modal .close');
 
     albumArts.forEach(function(art) {
         art.addEventListener('click', function() {
@@ -45,13 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    var backgroundMusic = document.getElementById('background-music');
     backgroundMusic.play().catch(function(error) {
         console.log('Playback failed: ' + error);
     });
 
     playButton.addEventListener('click', function() {
-        backgroundMusic.play();
+        backgroundMusic.play().catch(function(error) {
+            console.log('Playback failed: ' + error);
+        });
         playButton.style.display = 'none';
         pauseButton.style.display = 'inline';
     });
@@ -61,4 +64,3 @@ document.addEventListener('DOMContentLoaded', function() {
         playButton.style.display = 'inline';
         pauseButton.style.display = 'none';
     });
-});
