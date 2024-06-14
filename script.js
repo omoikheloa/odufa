@@ -52,6 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     playButton.addEventListener('click', function() {
         backgroundMusic.play();
-        playButton.style.display = 'none'; // Hide play button after play
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'inline';
+    });
+
+    pauseButton.addEventListener('click', function() {
+        backgroundMusic.pause();
+        playButton.style.display = 'inline';
+        pauseButton.style.display = 'none';
     });
 });
