@@ -609,21 +609,40 @@ ion-icon{
   z-index: 10;
 }
 
-.social-icons li{
-  float: left;
-  margin-right: 1.5rem;
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
-.social-icons ion-icon{
-  display: block;
-  font-size:1.2rem;
-  color:#000;
-  transition: all 0.3s ease;
+.social-icons li {
+  margin: 0 10px;
 }
 
-.social-icons ion-icon:hover{
-  color: #f374ffe0;
+.social-icons a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+  transition: color 0.3s;
 }
+
+.social-icons a:hover {
+  color: #007bff; /* Change this to the desired hover color */
+}
+
+.socials-1 {
+  color: #1DA1F2; /* Twitter color */
+}
+
+.socials-2 {
+  color: #000000; /* TikTok color */
+}
+
+.socials-3 {
+  color: #E1306C; /* Instagram color */
+}
+
 
 .navbar-bottom-white,
 .navbar-bottom-white .social-icons ion-icon{
