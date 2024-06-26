@@ -1424,13 +1424,13 @@ img {
 }
 
 #floating-play-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  position: sticky;
+  bottom: 300px;
+  right: 300px;
   background: #fff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
