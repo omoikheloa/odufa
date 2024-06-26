@@ -621,7 +621,15 @@ ion-icon{
   transition: all 0.3s ease;
 }
 
-.social-icons ion-icon:hover{
+.social-icons1 ion-icon:hover{
+  color: darkblue;
+}
+
+.social-icons2 ion-icon:hover{
+  color: black;
+}
+
+.social-icons3 ion-icon:hover{
   color: #f374ffe0;
 }
 
