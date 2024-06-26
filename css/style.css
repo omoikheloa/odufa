@@ -625,6 +625,18 @@ ion-icon{
   color: #f374ffe0;
 }
 
+.social-link-1 {
+  color: #1DA1F2
+}
+
+.social-link-2 {
+  color: #000000
+}
+
+.social-link-3 {
+  color: #E1306C
+}
+
 .navbar-bottom-white,
 .navbar-bottom-white .social-icons ion-icon{
   color: #fff;
@@ -1425,7 +1437,7 @@ img {
 
 #floating-play-btn {
   position: fixed;
-  top: 50%;
+  top: 90%;
   left: 50%;
   background: #ffffff;
   opacity: 70%;
