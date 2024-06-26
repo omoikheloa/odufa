@@ -1422,3 +1422,24 @@ img {
     font-size: 24px;
     cursor: pointer;
 }
+
+#floating-play-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#floating-play-btn i {
+  font-size: 24px;
+  color: #000;
+}

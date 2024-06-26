@@ -44,4 +44,21 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.display = 'none';
         }
     });
+
+    // Floating Play Button Functionality
+    const playButton = document.getElementById('floating-play-btn');
+    const audio = document.getElementById('background-music');
+    const icon = playButton.querySelector('i');
+
+    playButton.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            icon.classList.remove('fa-play');
+            icon.classList.add('fa-pause');
+        } else {
+            audio.pause();
+            icon.classList.remove('fa-pause');
+            icon.classList.add('fa-play');
+        }
+    });
 });
