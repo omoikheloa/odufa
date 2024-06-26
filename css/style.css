@@ -1424,7 +1424,7 @@ img {
 }
 
 #floating-play-btn {
-  position: sticky;
+  position: fixed;
   bottom: 300px;
   right: 300px;
   background: #fff;
