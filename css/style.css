@@ -702,7 +702,7 @@ ion-icon{
   visibility: hidden;
   padding:0.7rem 1.8rem;
   position: absolute;
-  top:85%;
+  top:100%;
   background:#1a1c26;
   color:#000;
   min-width: 12rem;
