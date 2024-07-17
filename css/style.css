@@ -1425,8 +1425,8 @@ img {
 
 #floating-play-btn {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 90%;
+  left: 48%;
   background: #ffffff;
   opacity: 70%;
   border-radius: 50%;
